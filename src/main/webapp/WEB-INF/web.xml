@@ -4,4 +4,12 @@
 
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
+  <servlet>
+    <servlet-name>App</servlet-name>
+    <servlet-class>contes.App</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>App</servlet-name>
+    <url-pattern>/api</url-pattern>
+  </servlet-mapping>
 </web-app>

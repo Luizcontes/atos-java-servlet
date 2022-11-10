@@ -1,0 +1,51 @@
+.container {
+    width: 960px;
+    margin: 0 auto;
+}
+
+/* HEADER */  
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 150px;
+    padding: 30px 0;
+}
+
+.links {
+    display: flex;
+}
+
+.links li {
+    margin-left: 50px;
+}
+
+.link {
+    text-decoration: none;
+    color: #000;
+}
+
+.link:active {
+    border-bottom: #000 solid 1px;
+}
+
+.link:hover {
+    border-bottom: #000 solid 1px;
+    cursor: pointer;
+}
+
+/* CONTENT */
+
+.content {
+    height: 80vh;
+}
+
+
+.a0 {
+    background: url('../img/cover/0.jpg') linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8));
+}
+
