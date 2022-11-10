@@ -17,20 +17,30 @@
             <img src="./assets/img/logo.jpg" alt="" class="logo">
             <ul class="links">
                 <li><a href="#" class="link">HOME</a></li>
-                <li><a href="#" class="link">CADASTRO</a></li>
+                <li><a href="/api" class="link">CADASTRO</a></li>
                 <li><a href="#" class="link">CONSULTA</a></li>
             </ul>
         </header>
-        <main class="content a0">
-
-            <!-- <form action="./api" method="GET">
-                <h1>Foda-se!!!</h1>
-                <label for="name">Name</label>
-                <input id="name" type="text" />
-                <input value="Registrar" type="submit" />
-            </form> -->
+        <main id="content" class="content a0">
+            <h1 id="titulo">SOLUCOES DE CATERING INOVADORAS</h1>
         </main>
+        <footer class="rodape">
+            <p class="copyright">Todos os direitos reservados &#169; - Contes desenvolvimento LTDA</p>
+        </footer>
     </div>
+    <script src="./assets/js/frontMsg.js"></script>
+    <script src="./assets/js/index.js"></script>
 </body>
 
 </html>
+
+
+
+
+
+<!-- <form action="./api" method="GET">
+    <h1>Foda-se!!!</h1>
+    <label for="name">Name</label>
+    <input id="name" type="text" />
+    <input value="Registrar" type="submit" />
+</form> -->
