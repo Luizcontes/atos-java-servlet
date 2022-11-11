@@ -26,6 +26,7 @@
 
 .links {
     display: flex;
+    list-style: none;
 }
 
 .links li {
@@ -35,14 +36,15 @@
 .link {
     text-decoration: none;
     color: #000;
+    font-size: 1.5rem;
 }
 
 .link:active {
-    border-bottom: #000 solid 1px;
+    border-bottom: #000 solid 2px;
 }
 
 .link:hover {
-    border-bottom: #000 solid 1px;
+    border-bottom: #000 solid 2px;
     cursor: pointer;
 }
 
@@ -53,6 +55,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.content #titulo {
     font-size: 2rem;
     color: #ebebeb;
     text-shadow: 3px 3px #000;
@@ -62,30 +67,37 @@
 
 .a0 {
     background: linear-gradient(rgba(0,0,0,var(--opa)) 0%, rgba(0,0,0,var(--opa)) 100%), url('../img/cover/0.jpg') center;
+    background-size: cover;
 }
 
 .a1 {
     background: linear-gradient(rgba(0,0,0,var(--opa)) 0%, rgba(0,0,0,var(--opa)) 100%), url('../img/cover/1.jpg') center;
+    background-size: cover;
 }
 
 .a2 {
     background: linear-gradient(rgba(0,0,0,var(--opa)) 0%, rgba(0,0,0,var(--opa)) 100%), url('../img/cover/2.jpg') center;
+    background-size: cover;
 }
 
 .a3 {
     background: linear-gradient(rgba(0,0,0,var(--opa)) 0%, rgba(0,0,0,var(--opa)) 100%), url('../img/cover/3.jpg') center;
+    background-size: cover;
 }
 
 .a4 {
     background: linear-gradient(rgba(0,0,0,var(--opa)) 0%, rgba(0,0,0,var(--opa)) 100%), url('../img/cover/4.jpg') center;
+    background-size: cover;
 }
 
 .a5 {
     background: linear-gradient(rgba(0,0,0,var(--opa)) 0%, rgba(0,0,0,var(--opa)) 100%), url('../img/cover/5.jpg') center;
+    background-size: cover;
 }
 
 .a6 {
     background: linear-gradient(rgba(0,0,0,var(--opa)) 0%, rgba(0,0,0,var(--opa)) 100%), url('../img/cover/6.jpg') center;
+    background-size: cover;
 }
 
 /* RODAPE */

@@ -1,4 +1,3 @@
-<%@ page import="java.util.Date"%>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -17,23 +16,16 @@
         <header class="navbar">
             <img src="./assets/img/logo.jpg" alt="" class="logo">
             <ul class="links">
-                <li><a href="./home" class="link">HOME</a></li>
-                <li><a href="./cadastro" class="link">CADASTRO</a></li>
-                <li><a href="./consulta" class="link">CONSULTA</a></li>
+                <li><a href="./home.jsp" class="link">HOME</a></li>
+                <li><a href="./cadastro.jsp" class="link">CADASTRO</a></li>
+                <li><a href="./consulta.jsp" class="link">CONSULTA</a></li>
             </ul>
         </header>
 
-        <%out.println("Chupa Cu!!!"); %>
-        <%-- Comentario --%>
-        <p>Data: <%=new Date()%></p>
-        <%! int contador=0;%>
-        <p>Visitas: <%=contador++%></p>
 
-        <a href="home">TEST</a>
-
-        <!-- <main id="content" class="content a0">
+        <main id="content" class="content a0">
             <h1 id="titulo">SOLUCOES DE CATERING INOVADORAS</h1>
-        </main> -->
+        </main>
         <footer class="rodape">
             <p class="copyright">Todos os direitos reservados &#169; - Contes desenvolvimento LTDA</p>
         </footer>
@@ -43,14 +35,3 @@
 </body>
 
 </html>
-
-
-
-
-
-<!-- <form action="./api" method="GET">
-    <h1>Foda-se!!!</h1>
-    <label for="name">Name</label>
-    <input id="name" type="text" />
-    <input value="Registrar" type="submit" />
-</form> -->

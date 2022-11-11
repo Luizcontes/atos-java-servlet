@@ -1,0 +1,35 @@
+:root {
+    --opa: 0.5;
+}
+
+.cadastro {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+}
+
+form {
+    width: 30vw;
+}
+
+form > .cadastro__form--block {
+    display: block;
+    width: 100%;
+    padding: 3px;
+}
+
+form > label {
+    margin-bottom: 3px;
+}
+
+form >  input {
+    margin-bottom: 20px;
+}
+
+form .button {
+    padding: 8px;
+    width: 100%;
+    background-color: #046da7;
+    border-radius: 5px;
+    cursor: pointer;
+}

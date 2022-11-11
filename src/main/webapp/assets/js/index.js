@@ -11,3 +11,4 @@ setInterval(() => {
     titulo.textContent = msg[i]
 }, 5000)
 
+
