@@ -16,9 +16,9 @@
         <header class="navbar">
             <img src="./assets/img/logo.jpg" alt="" class="logo">
             <ul class="links">
-                <li><a href="./home.jsp" class="link">HOME</a></li>
-                <li><a href="./cadastro.jsp" class="link">CADASTRO</a></li>
-                <li><a href="./consulta.jsp" class="link">CONSULTA</a></li>
+                <li><a href="./home" class="link">HOME</a></li>
+                <li><a href="./cadastro" class="link">CADASTRO</a></li>
+                <li><a href="./consulta" class="link">CONSULTA</a></li>
             </ul>
         </header>
 

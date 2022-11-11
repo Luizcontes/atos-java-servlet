@@ -17,9 +17,9 @@
         <header class="navbar">
             <img src="./assets/img/logo.jpg" alt="" class="logo">
             <ul class="links">
-                <li><a href="./home.jsp" class="link">HOME</a></li>
-                <li><a href="./cadastro.jsp" class="link">CADASTRO</a></li>
-                <li><a href="./consulta.jsp" class="link">CONSULTA</a></li>
+                <li><a href="./home" class="link">HOME</a></li>
+                <li><a href="./cadastro" class="link">CADASTRO</a></li>
+                <li><a href="./consulta" class="link">CONSULTA</a></li>
             </ul>
         </header>
         <main id="content" class="cadastro">
@@ -30,12 +30,12 @@
             <div>
                 <form action="cadastrar" method="post">
                     <label class="cadastro__form--block" for="nome">Nome</label>
-                    <input class="cadastro__form--block" type="text" name="nome">
+                    <input id='nome' class="cadastro__form--block" type="text" name="nome">
                     <label class="cadastro__form--block"for="quantidade">Quantidade de convidados</label>
-                    <input class="cadastro__form--block" type="number" name="quantidade">
+                    <input id='quantidade' class="cadastro__form--block" type="number" name="quantidade">
                     <input id="sobremesa" type="checkbox" name="sobremesa">
                     <label for="sobremesa">Deseja sobremesa?</label>
-                    <input id="button" class="cadastro__form--block button" value="Realizar cotacao" type="submit">
+                    <input disabled="true" id="button" class="cadastro__form--block button" value="Realizar cotacao" type="submit" >
                 </form>
             </div>
         </main>
