@@ -12,7 +12,7 @@ import jakarta.servlet.http.HttpServletResponse;
 import model.DAO;
 import model.Proposta;
 
-@WebServlet(urlPatterns = { "/cadastrar", "/cadastro" })
+@WebServlet(urlPatterns = {})
 public class CadastroController extends HttpServlet {
 
     Proposta proposta;
@@ -63,6 +63,7 @@ public class CadastroController extends HttpServlet {
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String parameter = request.getServletPath();
 
+        System.out.print("src/main/java/controller/CadastroController.java");
         if (parameter == "/cadastro") {
 
             request.getRequestDispatcher("consulta").forward(request, response);

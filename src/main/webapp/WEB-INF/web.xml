@@ -3,18 +3,19 @@
  "http://java.sun.com/dtd/web-app_2_3.dtd" >
 
 <web-app>
-  <!-- <display-name>Archetype Created Web Application</display-name>
+  <display-name>Archetype Created Web Application</display-name>
+  
+  <!-- <welcome-file-list>
+    <welcome-file>home.jsp</welcome-file>
+  </welcome-file-list> -->
+  
   <servlet>
     <servlet-name>HomeController</servlet-name>
-    <servlet-class>controller.HomeController</servlet-class>
+    <servlet-class>cadastrar</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>HomeController</servlet-name>
-    <url-pattern>/main</url-pattern>
-  </servlet-mapping> -->
-
-  <welcome-file-list>
-    <welcome-file>home.jsp</welcome-file>
-  </welcome-file-list>
+    <url-pattern>/cadastrar</url-pattern>
+  </servlet-mapping> 
   
 </web-app>

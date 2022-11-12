@@ -13,7 +13,7 @@ import model.DAO;
 import model.Proposta;
 
 
-@WebServlet(urlPatterns = {"/consulta", "/consultar"})
+@WebServlet(urlPatterns = {"/consultar"})
 public class ConsultaController extends HttpServlet{
     
     DAO dao = new DAO();
