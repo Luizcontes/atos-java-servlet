@@ -5,17 +5,4 @@
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
   
-  <!-- <welcome-file-list>
-    <welcome-file>home.jsp</welcome-file>
-  </welcome-file-list> -->
-  
-  <servlet>
-    <servlet-name>HomeController</servlet-name>
-    <servlet-class>cadastrar</servlet-class>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>HomeController</servlet-name>
-    <url-pattern>/cadastrar</url-pattern>
-  </servlet-mapping> 
-  
 </web-app>

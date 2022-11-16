@@ -13,13 +13,6 @@ public class Proposta {
     public Proposta() {
         super();
     }
-
-    public Proposta(String nome, String quantidade) {
-        this.nome = nome;
-        this.quantidade = quantidade;
-        this.sobremesa = "false";
-        calculateProposta();
-    }
     
     public Proposta(String nome, String quantidade, String sobremesa) {
         this.nome = nome;
@@ -72,6 +65,7 @@ public class Proposta {
     }
 
     public String getSobremesa() {
+        calculateProposta();
         return sobremesa;
     }
 
@@ -84,14 +78,14 @@ public class Proposta {
         double quantidade = Double.parseDouble(getQuantidade());
         double total = 0;
         double dSobremesa = 0;
-        Double prato = quantidade * 22.90;
+        double prato = quantidade * 22.90;
         double garcom = Math.ceil(quantidade / 15) * 250;
 
 
         total = prato + garcom;
 
         if (sobremesa == "true") {
-            dSobremesa = total * 0.1;
+            dSobremesa = prato * 0.1;
             total = total + dSobremesa;
         }
 

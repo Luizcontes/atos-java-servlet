@@ -14,31 +14,34 @@
 
 <body>
     <div class="container">
-        <header class="navbar">
-            <img src="./assets/img/logo.jpg" alt="" class="logo">
-            <ul class="links">
-                <li><a href="./home" class="link">HOME</a></li>
-                <li><a href="./cadastro" class="link">CADASTRO</a></li>
-                <li><a href="./consulta" class="link">CONSULTA</a></li>
-            </ul>
-        </header>
-        <main id="content" class="cadastro">
-            <div>
-                <h1>CADASTRO DE PROPOSTA</h1>
-                <hr>
-            </div>
-            <div>
-                <form action="cadastrar" method="post">
-                    <label class="cadastro__form--block" for="nome">Nome</label>
-                    <input id='nome' class="cadastro__form--block" type="text" name="nome">
-                    <label class="cadastro__form--block"for="quantidade">Quantidade de convidados</label>
-                    <input id='quantidade' class="cadastro__form--block" type="number" name="quantidade">
-                    <input id="sobremesa" type="checkbox" name="sobremesa">
-                    <label for="sobremesa">Deseja sobremesa?</label>
-                    <input disabled="true" id="button" class="cadastro__form--block button" value="Realizar cotacao" type="submit" >
-                </form>
-            </div>
-        </main>
+        <div>
+            <header class="navbar">
+                <img src="./assets/img/logo.jpg" alt="" class="logo">
+                <ul class="links">
+                    <li><a href="./" class="link">HOME</a></li>
+                    <li><a href="./cadastro" class="link">CADASTRO</a></li>
+                    <li><a href="./consulta" class="link">CONSULTA</a></li>
+                </ul>
+            </header>
+            <main id="content" class="cadastro">
+                <div>
+                    <h1>CADASTRO DE PROPOSTA</h1>
+                    <hr>
+                </div>
+                <div>
+                    <form action="cadastrar" method="post">
+                        <label class="cadastro__form--block" for="nome">Nome</label>
+                        <input id='nome' class="cadastro__form--block" type="text" name="nome">
+                        <label class="cadastro__form--block" for="quantidade">Quantidade de convidados</label>
+                        <input id='quantidade' class="cadastro__form--block" type="number" name="quantidade">
+                        <input id="sobremesa" type="checkbox" name="sobremesa">
+                        <label for="sobremesa">Deseja sobremesa?</label>
+                        <input disabled="true" id="button" class="cadastro__form--block button" value="Realizar cotacao"
+                            type="submit">
+                    </form>
+                </div>
+            </main>
+        </div>
         <footer class="rodape">
             <p class="copyright">Todos os direitos reservados &#169; - Contes desenvolvimento LTDA</p>
         </footer>
