@@ -1,5 +1,4 @@
 #content {
-    /* height: 80vh; */
     width: 50vw;
     align-self: stretch;
 }
@@ -31,4 +30,78 @@ form .button {
     cursor: pointer;
     
     flex-basis: content;
+}
+
+.propostas {
+    width: 100%;
+    margin: 15px 0;
+    /* border-collapse: separate;
+    border-spacing: 20 px; */
+}
+
+.semBorda {
+    border: none !important;
+}
+
+.propostas th, .propostas td {
+    text-align: left;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: solid 1px #000;
+    border-spacing: 20px;
+}
+
+tr > td {
+    width: auto;
+}
+
+tr > th {
+    width: auto;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.botao {
+    text-align: center !important;
+    border: none !important;
+    padding: 0;
+}
+
+.semBorda, .botao {
+    width: 100px;
+}
+
+.update {
+    width: auto;
+    padding: 5px 0;
+}
+
+.input {
+    width: 140px;
+    border: hidden;
+}
+
+.checkbox {
+    text-align: center;
+}
+
+.atualizar {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgb(6, 162, 6);
+    cursor: pointer;
+}
+
+.deletar {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgb(197, 50, 50);
+    cursor: pointer;
+}
+
+.proposta {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgb(149, 158, 161);
+    cursor: pointer;
 }

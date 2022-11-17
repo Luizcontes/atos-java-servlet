@@ -29,7 +29,7 @@
                     <hr>
                 </div>
                 <div>
-                    <form action="cadastrar" method="post">
+                    <form action="cadastrar" method="post" target="_blank">
                         <label class="cadastro__form--block" for="nome">Nome</label>
                         <input id='nome' class="cadastro__form--block" type="text" name="nome">
                         <label class="cadastro__form--block" for="quantidade">Quantidade de convidados</label>

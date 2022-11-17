@@ -1,28 +1,31 @@
 package model;
 
 public class Proposta {
-    
+
+    private String id = "0";
     private String nome;
-    private String quantidade ;
+    private String quantidade;
     private String sobremesa;
     private String totalPrato;
     private String taxaGarcom;
     private String taxaSobremesa;
     private String precoTotal;
-    
+
     public Proposta() {
         super();
     }
-    
+
     public Proposta(String nome, String quantidade, String sobremesa) {
         this.nome = nome;
         this.quantidade = quantidade;
         this.sobremesa = sobremesa;
         calculateProposta();
     }
-    
-    public Proposta(String nome, String quantidade, String sobremesa, String totalPrato, String taxaGarcom,
+
+    public Proposta(String id, String nome, String quantidade, String sobremesa, String totalPrato, String taxaGarcom,
             String taxaSobremesa, String precoTotal) {
+
+        this.id = id;
         this.nome = nome;
         this.quantidade = quantidade;
         this.sobremesa = sobremesa;
@@ -31,7 +34,7 @@ public class Proposta {
         this.taxaSobremesa = taxaSobremesa;
         this.precoTotal = precoTotal;
     }
-    
+
     public String getTotalPrato() {
         return totalPrato;
     }
@@ -46,6 +49,14 @@ public class Proposta {
 
     public String getPrecoTotal() {
         return precoTotal;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
     }
 
     public String getNome() {
@@ -81,26 +92,25 @@ public class Proposta {
         double prato = quantidade * 22.90;
         double garcom = Math.ceil(quantidade / 15) * 250;
 
-
         total = prato + garcom;
 
-        if (sobremesa == "true") {
+        if (sobremesa == "sim") {
             dSobremesa = prato * 0.1;
             total = total + dSobremesa;
         }
 
         this.totalPrato = String.format("%, .2f", prato);
         this.taxaGarcom = String.format("%,.2f", (garcom));
-        this.taxaSobremesa = String.format("%,.2f",dSobremesa);
-        this.precoTotal = String.format("%,.2f",total);
+        this.taxaSobremesa = String.format("%,.2f", dSobremesa);
+        this.precoTotal = String.format("%,.2f", total);
     }
-    
+
     @Override
     public String toString() {
-        return "Nome: " + getNome() + "\nQuantidade: " + getQuantidade() + 
-        "\nSobremesa: " + getSobremesa() + "\nTotal Prato: " + getTotalPrato() +
-        "\nTaxa Garcom: " + getTaxaGarcom() + "\nTaxa Sobremesa: " + getTaxaSobremesa() +
-        "\nPreco Total: " + getPrecoTotal();
+        return "Nome: " + getNome() + "\nQuantidade: " + getQuantidade() +
+                "\nSobremesa: " + getSobremesa() + "\nTotal Prato: " + getTotalPrato() +
+                "\nTaxa Garcom: " + getTaxaGarcom() + "\nTaxa Sobremesa: " + getTaxaSobremesa() +
+                "\nPreco Total: " + getPrecoTotal();
     }
 
 }

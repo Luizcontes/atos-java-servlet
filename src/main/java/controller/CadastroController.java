@@ -40,14 +40,16 @@ public class CadastroController extends HttpServlet {
         // System.out.println("Nome: " + nome + "\nQuantidade: " + quantidade +
         // "\nSobremesa: " + sobremesa);
 
-        proposta = new Proposta(nome, quantidade, "false");
+        proposta = new Proposta(nome, quantidade, "nao");
 
         if (sobremesa != null) {
-            proposta.setSobremesa("true");
+            proposta.setSobremesa("sim");
         }
 
         dao.inserirContato(proposta);
 
-        request.getRequestDispatcher("cadastro.jsp").forward(request, response);
+        request.setAttribute("proposta", proposta);
+
+        request.getRequestDispatcher("/relatorio").forward(request, response);
     }
 }
